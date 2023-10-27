@@ -15,6 +15,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         service.inputBill(scan,billArrayList);
         System.out.println(billArrayList);
+        //2
     }
 
 }
