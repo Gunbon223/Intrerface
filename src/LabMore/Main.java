@@ -10,11 +10,10 @@ public class Main {
 
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         ArrayList<Bill> billArrayList = new ArrayList<>();
         BillService service = new BillService();
-        Scanner scan = new Scanner(System.in);
         service.inputBill(scan,billArrayList);
-        System.out.println(billArrayList);
+        service.display(billArrayList);
     }
-
 }
