@@ -5,7 +5,7 @@ import LabMore.service.CustomerService;
 public class Bill {
         private Customer customerInfo ;
         private double prePowerCount;
-        private double PowerCount;
+        private double powerCount;
         private double billMoney;
 
     public Bill() {
@@ -30,11 +30,11 @@ public class Bill {
     }
 
     public double getPowerCount() {
-        return PowerCount;
+        return powerCount;
     }
 
     public void setPowerCount(double powerCount) {
-        PowerCount = powerCount;
+        this.powerCount = powerCount;
     }
 
     public double getBillMoney() {
@@ -47,11 +47,11 @@ public class Bill {
 
     @Override
     public String toString() {
-        return "Bill{" +
-                "customerInfo=" + customerInfo +
+        return "Bill cua: " +
+                customerInfo +
                 ", prePowerCount=" + prePowerCount +
-                ", PowerCount=" + PowerCount +
+                ", newPowerCount=" + powerCount +
                 ", billMoney=" + billMoney +
-                '}';
+                "\n";
     }
 }
