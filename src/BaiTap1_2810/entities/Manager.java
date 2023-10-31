@@ -23,4 +23,14 @@ public class Manager extends Employee{
     public void setNewSalary() {
         setSalary(responsibleSalary*getSalary()) ;
     }
+
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "responsibleSalary=" + responsibleSalary +
+                ", name='" + name + '\'' +
+                ", id=" + id +
+                ", salary=" + salary +
+                '}';
+    }
 }

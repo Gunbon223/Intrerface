@@ -27,7 +27,7 @@ public class ManagerService implements ITaxCalculate {
         return 0;
     }
 
-    public void Manager(ArrayList<Employee> employeeArrayList, Scanner scanner) {
+    public void managerInput(ArrayList<Employee> employeeArrayList, Scanner scanner) {
         Employee employee = employeService.employeeInput(employeeArrayList,scanner);
         System.out.println("Nhap luong trach nhiem quan ly: ");
         Double resSalary = utiliti.inputDouble(scanner);

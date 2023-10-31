@@ -35,4 +35,15 @@ public class MarketingEmplyee extends Employee{
         newSalary = (getSalary() + (getSalary()*getSalePercent()));
         setSalary(newSalary);
     }
+
+    @Override
+    public String toString() {
+        return "MarketingEmplyee{" +
+                "saleNumber=" + saleNumber +
+                ", salePercent=" + salePercent +
+                ", name='" + name + '\'' +
+                ", id=" + id +
+                ", salary=" + salary +
+                '}';
+    }
 }
